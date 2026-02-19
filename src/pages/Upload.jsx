@@ -76,7 +76,7 @@ export default function Upload() {
         const formData = new FormData();
         formData.append("file", fileItem.file); // 🔑 key = "file"
   
-        const response = await fetch(`${API_URL}/api/v1/uploads`, {
+        const response = await fetch(`${API_URL}/api/v1/uploads/`, {
           method: "POST",
           body: formData,
           credentials : "include"
